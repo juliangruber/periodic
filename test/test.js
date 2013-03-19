@@ -6,6 +6,7 @@ test('repeated', function (t) {
   repeated(0).on('tick', function () {
     if (++ticks == 3) {
       this.end();
+      t.ok(true); // testling ci
       t.end();
     }
   })
