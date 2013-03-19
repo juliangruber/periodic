@@ -41,6 +41,11 @@ With [npm](http://npmjs.org) do
 $ npm install repeated
 ```
 
+## Alternatives
+
+[every](https://github.com/chrisdickinson/every) by chrisdickinson has a nicer name but the
+overall interface and implementation are too complex for my needs.
+
 ## License
 
 (MIT)
