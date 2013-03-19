@@ -1,7 +1,7 @@
 
 # periodic
 
-Reliable intervals.
+Reliable periodic events.
 
 [![Build Status](https://travis-ci.org/juliangruber/periodic.png)](https://travis-ci.org/juliangruber/periodic)
 
