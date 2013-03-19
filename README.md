@@ -1,20 +1,20 @@
 
-# repeated
+# periodic
 
 Reliable intervals.
 
-[![Build Status](https://travis-ci.org/juliangruber/repeated.png)](https://travis-ci.org/juliangruber/repeated)
+[![Build Status](https://travis-ci.org/juliangruber/periodic.png)](https://travis-ci.org/juliangruber/periodic)
 
-[![browser support](https://ci.testling.com/juliangruber/repeated.png)](https://ci.testling.com/juliangruber/repeated)
+[![browser support](https://ci.testling.com/juliangruber/periodic.png)](https://ci.testling.com/juliangruber/periodic)
 
 ## Usage
 
 ```js
-var repeat = require('repeated');
+var periodic = require('periodic');
 
 var ticks = 0;
 
-repeat(1000)
+periodic(1000)
   .on('tick', function () {
     console.log('tick');
     if (++ticks == 10) this.end();
@@ -23,22 +23,22 @@ repeat(1000)
 
 ## API
 
-### repeat(interval)
+### periodic(interval)
 
-Return a new repeater that emits `tick` events every `interval` milliseconds.
+Return a new `periodic` that emits `tick` events every `interval` milliseconds.
 
-`repeated` tries to stay in time even when the event loop is busy.
+`periodic` tries to stay in time even when the event loop is busy.
 
-### repeat#end()
+### periodic#end()
 
-Stop repeating.
+Stop emitting.
 
 ## Installation
 
 With [npm](http://npmjs.org) do
 
 ```bash
-$ npm install repeated
+$ npm install periodic
 ```
 
 ## Alternatives

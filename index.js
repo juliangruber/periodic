@@ -1,10 +1,10 @@
 var EventEmitter = require('events').EventEmitter;
 var inherits = require('util').inherits;
 
-module.exports = repeated;
+module.exports = periodic;
 
-function repeated (interval) {
-  if (!(this instanceof repeated)) return new repeated(interval);
+function periodic (interval) {
+  if (!(this instanceof periodic)) return new periodic(interval);
   EventEmitter.call(this);
 
   this.interval = interval;
@@ -17,9 +17,9 @@ function repeated (interval) {
   });
 }
 
-inherits(repeated, EventEmitter);
+inherits(periodic, EventEmitter);
 
-repeated.prototype.repeat = function () {
+periodic.prototype.repeat = function () {
   if (this.ended) return;
 
   var start = +new Date();
@@ -36,7 +36,7 @@ repeated.prototype.repeat = function () {
   this.emit('tick');
 }
 
-repeated.prototype.end = function () {
+periodic.prototype.end = function () {
   this.ended = true;
   if (this.timeout) clearTimeout(this.timeout);
 }

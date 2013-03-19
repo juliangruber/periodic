@@ -1,12 +1,12 @@
 {
-  "name": "repeated",
-  "description": "Reliable repeated events / intervals.",
+  "name": "periodic",
+  "description": "Reliable periodic events.",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/juliangruber/repeated.git"
+    "url": "git://github.com/juliangruber/periodic.git"
   },
-  "homepage": "https://github.com/juliangruber/repeated",
+  "homepage": "https://github.com/juliangruber/periodic",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
@@ -31,7 +31,9 @@
     "setTimeout",
     "setInterval",
     "interval",
-    "events"
+    "events",
+    "repeated",
+    "periodic"
   ],
   "author": {
     "name": "Julian Gruber",
