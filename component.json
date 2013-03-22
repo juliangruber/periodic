@@ -2,7 +2,7 @@
   "name": "periodic",
   "repo": "juliangruber/periodic",
   "description": "Reliable periodic events.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "timer",
     "setTimeout",
@@ -13,8 +13,7 @@
     "periodic"
   ],
   "dependencies": {
-    "juliangruber/events": "0.0.1",
-    "component/inherit": "0.0.2"
+    "juliangruber/events": "0.0.1"
   },
   "scripts": [
     "index.js"
