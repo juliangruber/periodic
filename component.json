@@ -1,0 +1,23 @@
+{
+  "name": "periodic",
+  "repo": "juliangruber/periodic",
+  "description": "Reliable periodic events.",
+  "version": "0.0.1",
+  "keywords": [
+    "timer",
+    "setTimeout",
+    "setInterval",
+    "interval",
+    "events",
+    "repeated",
+    "periodic"
+  ],
+  "dependencies": {
+    "juliangruber/events": "0.0.1",
+    "component/inherit": "0.0.2"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "license": "MIT"
+}

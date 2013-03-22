@@ -41,6 +41,12 @@ With [npm](http://npmjs.org) do
 $ npm install periodic
 ```
 
+Alternatively, with [component](http://component.io) do
+
+```bash
+$ component install juliangruber/periodic
+```
+
 ## Alternatives
 
 [every](https://github.com/chrisdickinson/every) by chrisdickinson has a nicer name but the

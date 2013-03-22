@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="../build/build.js"></script>
+    <script>
+      var periodic = require('periodic');
+
+      alert('wait for success');
+      var ticks = 0;
+      periodic(0).on('tick', function () {
+        if (++ticks == 3) {
+          alert('success');
+          this.end();
+        }
+      });
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
