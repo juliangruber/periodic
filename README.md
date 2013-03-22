@@ -4,6 +4,8 @@ Reliable periodic events.
 
 [![Build Status](https://travis-ci.org/juliangruber/periodic.png)](https://travis-ci.org/juliangruber/periodic)
 
+[![browser support](https://ci.testling.com/juliangruber/periodic.png)](https://ci.testling.com/juliangruber/periodic)
+
 ## Usage
 
 ```js
