@@ -1,12 +1,5 @@
 var EventEmitter = require('events').EventEmitter;
 
-var inherits;
-try {
-  inherits = require('util').inherits;
-} catch (err) {
-  inherits = require('inherit');
-}
-
 module.exports = periodic;
 
 function periodic (interval) {
@@ -46,3 +39,10 @@ periodic.prototype.end = function () {
   this.ended = true;
   if (this.timeout) clearTimeout(this.timeout);
 }
+
+function inherits (a, b){
+  var fn = function(){};
+  fn.prototype = b.prototype;
+  a.prototype = new fn;
+  a.prototype.constructor = a;
+};
