@@ -24,7 +24,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tape": "~0.3.0"
+    "tape": "~4.6.3"
   },
   "keywords": [
     "timer",
